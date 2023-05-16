@@ -23,4 +23,8 @@ jobs:
             npm install
             npm run build 
           
-
+workflows: 
+  defaults: 
+    jobs: 
+      - build-frontend
+      - build-backend 
