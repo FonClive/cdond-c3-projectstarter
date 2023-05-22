@@ -155,7 +155,8 @@ jobs:
               aws ec2 descibe-instances --instance-ids $instance_id --query 'Reservations[*].Instances[*].PublicIpAddress' --output text >> project/.circleci/ansible/inventory.txt \
               exit 1
         - destroy-environment
-          
+
+  
 workflows: 
   defaults: 
     jobs: 
